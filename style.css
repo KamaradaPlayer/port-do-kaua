@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #DC2626; 
+    background-color: #2E7D32; 
 
     max-width: 100%;
 }
@@ -32,7 +32,7 @@
 }
 
 .navbar ul li a:hover {
-    color: #DC2626;
+    color: #2E7D32;
     background-color: #EDEDED;
     font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
@@ -47,7 +47,7 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: #1A1A1A;
+    background-color: #A5D6A7;
     border-radius: 20px;
     padding: 40px 0px;
     margin-right: 50px;
@@ -76,19 +76,19 @@
 
 .section-profile button {
     margin-top: 15px;
-    background-color: #DC2626;
-    border: 7px solid #DC2626;
+    background-color: #2E7D32;
+    border: 7px solid #2E7D32;
     border-radius: 5px;
     color: #F2F2F2;
-    box-shadow: 3px 2px 10px black;
+    box-shadow: 3px 2px 10px;
     transition: font-weight 0.2s ease-in, transform 0.2s ease-in;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .section-profile button:hover {
     margin-top: 15px;
-    background-color: #DC2626;
-    border: 7px solid #DC2626;
+    background-color: #2E7D32;
+    border: 7px solid #2E7D32;
     border-radius: 5px;
     color: #F2F2F2;
     transform: translateY(-2px);
@@ -99,17 +99,54 @@
     height: 250px;
     width: 250px;
     object-fit: cover;
-    border: 5px solid #1A1A1A;
+    border: 5px solid #A5D6A7;
     box-shadow: 5px 3px 15px;
     border-radius: 50%;
 }
 
-.rodape {
+.rodape,
+.rodape-sobremim
+.rodape-links
+.rodape-contatos {
     margin: 0;
     padding: 0;
+}
 
-    background-color: #DC2626;
+.rodape {
+
+    background-color: #2E7D32;
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2F2F2;
+
+    padding: 10px 50px;
 }
+
+.rodape h1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.rodape p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    flex-direction: column;
+    text-decoration:underline;
+    margin-bottom: 10px;
+    color: #F2F2F2;
+}
+
