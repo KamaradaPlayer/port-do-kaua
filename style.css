@@ -1,12 +1,13 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #115cce;
+    background-color: #1C1C1C; 
+
+    max-width: 100%;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: center;
     gap: 30px;
     margin: 0;
     padding: 0;
@@ -23,18 +24,80 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: whitesmoke;
+    color: #F2F2F2;
     position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
     border-radius: 5px;
 }
 
 .navbar ul li a:hover {
-    color: #115cce;
-    background-color: whitesmoke;
+    color: #121212;
+    background-color: #F2F2F2;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     padding: 5px 10px;
-    box-shadow: 0px 4px 7px rgb(0, 0, 0);
+    box-shadow: 0px 5px 15px rgb(0, 0, 0);
     transform: translateY(-1px);
+}
+
+.section-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1C1C1C;
+    border-radius: 20px;
+    padding: 40px 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 10px 25px 60px;
+}
+
+.section-profile h1,
+.section-profile p,
+.section-profile button {
+    margin: 0;
+    padding: 0;
+}
+
+.section-profile h1 {
+    color: #F2F2F2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 70px;
+}
+
+.section-profile p {
+    color: #A0A0A0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-profile button {
+    margin-top: 15px;
+    background-color: darkred;
+    border: 7px solid darkred;
+    border-radius: 5px;
+    color: #F2F2F2;
+    box-shadow: 3px 2px 10px black;
+    transition: font-weight 0.2s ease-in, transform 0.2s ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-profile button:hover {
+    margin-top: 15px;
+    background-color: darkred;
+    border: 7px solid darkred;
+    border-radius: 5px;
+    color: #F2F2F2;
+    transform: translateY(-2px);
+    font-weight: bold;
+}
+
+.section-profile img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 5px solid #333333;
+    box-shadow: 5px 3px 15px;
+    border-radius: 50%;
 }
