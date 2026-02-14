@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #F5F5F5; margin: 0; padding: 0; box-sizing: border-box;">
+<body style="background-color: #F5F5F5; margin: 0; padding: 0; box-sizing: border-box; display: flex; flex-direction: column; height: 100%; min-height: 100vh;">
 
     <!--Aba de navegação-->
     <header>
@@ -32,7 +32,7 @@
         <!--Seção de perfil-->
         <section class="section-profile">
             <h1>MEU PERFIL COMO PROGRAMADOR</h1>
-            <img src="C:\Users\aluno\Documents\KauaSF\Site-Port\Imagens\Senku.png" alt="foto ilustrativa">
+            <img src="Imagens/Senku.png" alt="foto ilustrativa">
 
             <br>
             <br>
@@ -48,11 +48,41 @@
         <br>
 
         <!--Seção de galeria-->
+        <section>
+            <main>
+                <h1>MINHA GALERIA<h1>
+                <h2>Alguns de meus projetos pessoais</h2>
+            </main>
 
+            <div class="slider">
+
+                <button class="prev"><</button>
+
+                <div class="slides">
+                    
+                    <div class="slider">
+                        <img src="Imagens/cow.jpg" alt="">
+                    </div>
+
+                    <div class="slider">
+                        <img src="Imagens/Musashi.jpg" alt="">
+                    </div>
+
+                    <div class="slider">
+                        <img src="Imagens/Villand.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <button class="next">></button>
+
+            </div>
+
+        </section>
 
     </section>
 
-    <div class="rodape">
+    <footer class="rodape">
         <div class="rodape-sobremim">
             <h1>Sobre Mim</h1>
             <p>&copy; 2026 - Kauã Santos</p>
@@ -70,7 +100,7 @@
             <p>kasf.ctrl@gmail.com</p>
             <p>62 98608-9919</p>
         </div>
-    </div>
+    </footer>
 
 </body>
 
