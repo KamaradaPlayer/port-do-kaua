@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port-Kaua</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body style="background-color: #F5F5F5; margin: 0; padding: 0; box-sizing: border-box; display: flex; flex-direction: column; height: 100%; min-height: 100vh;">
@@ -48,35 +49,36 @@
         <br>
 
         <!--Seção de galeria-->
-        <section>
-            <main>
-                <h1>MINHA GALERIA<h1>
-                <h2>Alguns de meus projetos pessoais</h2>
-            </main>
+        <main class="title-slider">
+            <h1>MINHA GALERIA<h1>
+            <h2>Alguns de meus projetos pessoais</h2>
+        </main>
 
-            <div class="slider">
+        <section class="slider">
 
-                <button class="prev"><</button>
+            <button class="prev"><</button>
+
+            <div class="slider-container">
 
                 <div class="slides">
                     
-                    <div class="slider">
+                    <div class="slide">
                         <img src="Imagens/cow.jpg" alt="">
                     </div>
 
-                    <div class="slider">
+                    <div class="slide">
                         <img src="Imagens/Musashi.jpg" alt="">
                     </div>
 
-                    <div class="slider">
+                    <div class="slide">
                         <img src="Imagens/Villand.jpg" alt="">
                     </div>
 
                 </div>
 
-                <button class="next">></button>
-
             </div>
+
+            <button class="next">></button>
 
         </section>
 
@@ -97,6 +99,8 @@
 
         <div class="rodape-contatos">
             <h1>Contatos</h1>
+
+
             <p>kasf.ctrl@gmail.com</p>
             <p>62 98608-9919</p>
         </div>

@@ -113,7 +113,84 @@
 
 /* SECTION SLIDER */
 
+.slider {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
+.slider-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 4px 7px 12px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider button {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F1F8F4;
+    background-color: #1B5E20;
+    border: 15px solid #1B5E20;
+    border-radius: 50%;
+}
+
+.prev,
+.next {
+    position: relative;
+    z-index: 5;
+}
+
+.title-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+}
+
+.title-slider h1,
+.title-slider h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title-slider h1 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.title-slider h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #263238;
+    opacity: 0.75;
+}
 
 
 /* FOOTER */
