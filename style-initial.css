@@ -2,10 +2,19 @@
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1B5E20; 
 
     max-width: 100%;
+    padding: 0px 120px 0px 40px;
+}
+
+.navbar h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F1F8F4;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .navbar ul {
@@ -36,12 +45,9 @@
 .navbar ul li a:hover {
     color: #1B5E20;
     background-color: #F1F8F4;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
-    font-weight: bold;
     padding: 5px 10px;
-    box-shadow: 0px 5px 15px rgb(0, 0, 0);
-    transform: translateY(-1px);
+    box-shadow: 0px 4px 12px rgb(28, 28, 28);
+    transform: translateY(-2px);
 }
 
 
@@ -196,9 +202,9 @@
 /* FOOTER */
 
 .rodape,
-.rodape-sobremim
-.rodape-links
-.rodape-contatos {
+.rodape-main,
+.rodape-rights,
+.rodape-sections {
     margin: 0;
     padding: 0;
 }
@@ -216,28 +222,10 @@
     padding: 10px 50px;
 }
 
-.rodape h1 {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.rodape p {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-
-.rodape a {
+.rodape-main {
     display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
     flex-direction: column;
-    text-decoration:underline;
-    margin-bottom: 10px;
-    color: #F1F8F4;
+    flex: 1;
+    align-items: center;
+    text-align: center;
 }
