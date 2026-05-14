@@ -4,52 +4,95 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1B5E20; 
 
-    max-width: 100%;
-    padding: 0px 80px 0px 60px;
+    padding: 15px 60px;
+    background-color: #1B5E20;
 }
 
-.navbar h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F1F8F4;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navbar ul {
+/* Lado esquerdo da navbar */
+.navbar-left {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar-left h1 {
+    color: #F1F8F4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+/* Ícones sociais */
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.icons a {
+    display: flex;
+    text-decoration: none;
+}
+
+.icons a i {
+    color: #F1F8F4;
+    font-size: 19px;
+
+    background-color: #1B5E20;
+    padding: 0px;
+    border-radius: 50%;
+
+    transition: 
+        transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icons a i:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+/* Menu da direita */
+.navbar-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
     margin: 0;
     padding: 0;
 }
 
-.navbar ul li {
+.navbar-menu li {
     list-style: none;
 }
 
-.navbar ul li a {
-    display: block;
-    padding: 5px 10px;
-    margin: 10px 0px;
+.navbar-menu a {
+    display: inline-block;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
-    font-weight: lighter;
+
     color: #F1F8F4;
-    position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    padding: 8px 14px;
+    border-radius: 6px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    color: #1B5E20;
+.navbar-menu a:hover {
     background-color: #F1F8F4;
-    padding: 5px 10px;
-    box-shadow: 0px 4px 12px rgb(28, 28, 28);
-    transform: translateY(-2px);
-}
+    color: #1B5E20;
 
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
 
 /* PROFILE MENU */
 
