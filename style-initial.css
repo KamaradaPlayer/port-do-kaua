@@ -25,36 +25,6 @@
 
 }
 
-/* Ícones sociais */
-.icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 17px;
-}
-
-.icons a {
-    display: flex;
-    text-decoration: none;
-}
-
-.icons a i {
-    color: #F1F8F4;
-    font-size: 19px;
-
-    background-color: #1B5E20;
-    padding: 0px;
-    border-radius: 50%;
-
-    transition: 
-        transform 0.2s ease, opacity 0.2s ease;
-}
-
-.icons a i:hover {
-    transform: translateY(-2px);
-    opacity: 0.8;
-}
-
 /* Menu da direita */
 .navbar-menu ul {
     display: flex;
@@ -78,7 +48,7 @@
     font-size: 12px;
 
     padding: 8px 14px;
-    border-radius: 6px;
+    border-radius: 18px;
 
     transition:
         background-color 0.3s ease,
@@ -92,6 +62,64 @@
 
     transform: translateY(-3px);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Section sobre mim */
+
+.aboutme-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 10px 200px;
+    margin: 0;
+}
+
+.aboutme-main h1 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.aboutme-main a {
+    display: flex;
+
+    text-decoration: none;
+    color: #1B5E20; 
+}
+
+.aboutme-info a i {
+    
+}
+
+.aboutme-main {
+    display: flex;
+    flex-direction: column;
+
+    width: fit fit-content;
+    
+    padding: 0;
+    margin: 0 auto;
+}
+
+.aboutme-main div {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme-info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme-info h2 {
+    padding: 0;
+    margin: 0;
 }
 
 /* PROFILE MENU */
