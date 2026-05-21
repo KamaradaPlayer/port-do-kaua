@@ -85,33 +85,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     padding: 10px 200px;
+    gap: 100px 0px;
     margin: 0;
+    margin-top: 160px;
 }
 
 .aboutme-main h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 45px;
+    font-size: 55px;
 
     margin: 0;
 }
 
 .aboutme-main h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: normal;
 
     margin: 0;
     margin-bottom: 5px;
 }
 
-.aboutme-main a {
+.icons a {
     font-family: "loren", serif;
     display: flex;
+    font-size: 22px;
 
     text-decoration: none;
     color: #1B5E20; 
+    background-color: #F1F8F4;
+
+    transition: color 0.2 ease, background-color 0.2 ease, trasnform 0.2 ease;
+}
+
+.icons a:hover {
+    
+    color: #F1F8F4;
+    background-color: #1B5E20;
+    transform: translateY(-3px);
 }
 
 .aboutme-info a i {
@@ -134,6 +148,11 @@
 
     padding: 0;
     margin: 0;
+}
+
+.icons {
+    display: flex;
+    gap: 0px 10px;
 }
 
 .aboutme-info {
@@ -215,7 +234,6 @@
 
 .title-slider h1,
 .title-slider h2 {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -230,7 +248,7 @@
 .title-slider h2 {
     font-family: "Montserrat", sans-serif;
 
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 20px;
     color: #263238;
     opacity: 0.75;
