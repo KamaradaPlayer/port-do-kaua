@@ -2,20 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: none;
-  font-weight: 900px;
-  font-style: normal;
-}
-
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
 
 * {
     margin: 0;
@@ -35,11 +21,17 @@ body {
 
 #home,
 #sobre,
-#experiencias,
+#experiencias {
+    scroll-margin-top: 280px;
+}
+
 #projetos {
     scroll-margin-top: 120px;
 }
 
+section {
+    padding: 40px 0px;
+}
 
 /* NAVBAR SECTION */
 
@@ -123,16 +115,16 @@ body {
 
 /* Section sobre mim */
 
-.aboutme-section {
+.hero {
+    min-height: 80vh;
+
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
-    padding: 10px 200px;
-    gap: 100px 0px;
-    margin: 0;
-    margin-top: 230px;
+    text-align: center;
 }
 
 .aboutme-main h1 {
@@ -212,19 +204,22 @@ body {
     margin: 0;
 }
 
-.icons {
-    display: flex;
-    gap: 0px 10px;
-}
-
 .aboutme-info {
     display: flex;
-    flex-direction: column;
 
     padding: 0;
     margin: 0;
 
     margin-bottom: 230px;
+}
+
+.about-maindiv {
+    display: flex;
+
+}
+
+.about-maindiv div {
+    display: flex;
 }
 
 .aboutme-info h2 {
@@ -260,7 +255,7 @@ body {
     overflow: hidden;
     width: 900px;
     border-radius: 20px;
-    box-shadow: 4px 7px 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .slides {
@@ -344,7 +339,7 @@ body {
     display: flex;
     flex: 1;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 30px 90px;
     font-family: Arial, Helvetica, sans-serif;
     color: #F1F8F4;
 
