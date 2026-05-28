@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .montserrat-uniquifier {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: none;
@@ -7,12 +9,38 @@
   font-style: normal;
 }
 
-.lora-font {
-  font-family: "Lora", serif;
+.inter-font {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700px;
+  font-weight: 100;
   font-style: normal;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F5F5;
+    padding-top: 80px;
+    font-family: "Inter", sans-serif;
+}
+
+#home,
+#sobre,
+#experiencias,
+#projetos {
+    scroll-margin-top: 120px;
+}
+
+
 /* NAVBAR SECTION */
 
 .navbar {
@@ -20,8 +48,22 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px 120px;
-    background-color: #1B5E20;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px 40px;
+
+
+    background: rgba(27, 94, 32, 0.9);
+
+    
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+
+    z-index: 1000;
 }
 
 /* Lado esquerdo da navbar */
@@ -59,7 +101,7 @@
     text-decoration: none;
 
     color: #F1F8F4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "inter", sans-serif;
     font-size: 12px;
 
     padding: 8px 14px;
@@ -90,7 +132,7 @@
     padding: 10px 200px;
     gap: 100px 0px;
     margin: 0;
-    margin-top: 160px;
+    margin-top: 230px;
 }
 
 .aboutme-main h1 {
@@ -109,23 +151,43 @@
     margin-bottom: 5px;
 }
 
-.icons a {
-    font-family: "loren", serif;
+.icons {
     display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
     font-size: 22px;
 
     text-decoration: none;
-    color: #1B5E20; 
+
+    color: #1B5E20;
     background-color: #F1F8F4;
 
-    transition: color 0.2 ease, background-color 0.2 ease, trasnform 0.2 ease;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .icons a:hover {
-    
     color: #F1F8F4;
     background-color: #1B5E20;
-    transform: translateY(-3px);
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(27, 94, 32, 0.35);
 }
 
 .aboutme-info a i {
@@ -161,13 +223,20 @@
 
     padding: 0;
     margin: 0;
+
+    margin-bottom: 230px;
 }
 
 .aboutme-info h2 {
     font-family: "Montserrat", sans-serif;
+    font-size: 40px;
 
     padding: 0;
     margin: 0;
+}
+
+.aboutme-info p {
+    font-family: "inter", sans-serif;
 }
 
 
@@ -181,6 +250,8 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+
+    margin-bottom: 50px;
 }
 
 .slider-container {
@@ -278,6 +349,7 @@
     color: #F1F8F4;
 
     padding: 10px 90px;
+    margin-top: 100px;
 }
 
 .rodape-main {
@@ -305,4 +377,12 @@
     text-decoration: none;
     color: #A5D6A7;
     font-size:13px;
+
+    transition: color 0.2s ease, text-decoration 0.2s ease, transform 0.2s ease;
+}
+
+.rodape-sections a:hover {
+    text-decoration: underline;
+    color: #F5F5F5;
+    transform: translateY(-2px);
 }
