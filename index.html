@@ -31,122 +31,123 @@
 
             <div class="navbar-menu">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Sobre">Sobre Mim</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
                     <li><a href="">Experiências</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
 
-    <section class="main-section">
 
-        <section class="hero">
+    <!-- SEÇÃO HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-main">
 
-            <div class="aboutme-main" id="Home">
+            <!-- Título do hero-->
+            <h1>
+                Kauã Santos Fagundes
+            </h1>
 
-                <h1>
-                    Kauã Santos Fagundes
-                </h1>
+            <!-- Descrição de subtítulo e links-->
+            <div>   
+                <h2>
+                    Desenvolvedor em desenvolvimento
+                </h2>
 
-                <div>
-                    <h2>
-                        Desenvolvedor em desenvolvimento
-                    </h2>
+                <div class="hero-icons">
+                    <a 
+                    href="https://wa.me/5562986089919"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a 
+                    href="https://github.com/kamaradaplayer"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <!-- Sem linkedin ainda, vou criar um dps-->
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="icons">
-                        <a href="https://wa.me/5562986089919">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="https://github.com/kamaradaplayer">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
 
+    <!-- SEÇÃO SOBRE MIM-->
+    <section class="aboutme" id="sobre">
+            <div class="aboutme-info">
+
+                <div class="aboutme-text">
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Kauã Santos Fagundes, 16 anos, cursando o ensino médio/itinerário de programação e
+                        desenvolvimento de sistemas. Jovem disposto, competente, auto-didata e proativo.
+                        Comecei minha jornada na programação aos 12 anos com meu primeiro contato na área de
+                        desenvolvimento de jogos, assim criando interesse nesse mundo tecnologico e lógico.
+                    </p>
                 </div>
 
+                <div class="aboutme-images">
+                    <img src="" alt="Foto de Kauã Santos">
+                    <p>
+                        Kasf | 16 anos | Dev Junior
+                    </p>
+                </div>
             </div>
+    </section>
 
-            <div class="aboutme-info" id="Sobre">
 
-                <h2>Sobre mim</h2>
-                <div>
+    <!--SEÇÃO GALERIA-->
+    <!-- Título da galeria-->
+    <main class="title-slider" id="projetos">
+        <h1>MINHA GALERIA<h1>
+        <h2>Alguns de meus projetos pessoais</h2>
+    </main>
 
-                    <div>
+    <!-- Slider com slides de projetos-->
+    <section class="slider">
 
-                        <p>
-                            Kauã Santos Fagundes, 16 anos, cursando o ensino médio/itinerário de programação e
-                            desenvolvimento de sistemas. Jovem disposto, competente, auto-didata e proativo.
-                            Comecei minha jornada na programação aos 12 anos com meu primeiro contato na área de
-                            desenvolvimento de jogos, assim criando interesse nesse mundo tecnologico e lógico.
-                        </p>
+        <button class="prev"><</button>
 
-                    </div>
-
-                    <div class="about-img">
-
-                        <img src="" alt="Dev Lindão">
-
-                        <h3>
-                            Kasf | 16 anos | Dev Junior
-                        </h3>
-
-                    </div>
-
+        <!-- Slider e imagens-->
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Imagens/cow.jpg" alt="">
                 </div>
 
-            </div>
-
-        </section>
-
-        <!--Seção de galeria-->
-        <main class="title-slider" id="Projetos">
-            <h1>MINHA GALERIA<h1>
-            <h2>Alguns de meus projetos pessoais</h2>
-        </main>
-
-        <section class="slider">
-
-            <button class="prev"><</button>
-
-            <div class="slider-container">
-
-                <div class="slides">
-                    
-                    <div class="slide">
-                        <img src="Imagens/cow.jpg" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="Imagens/Musashi.jpg" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="Imagens/Villand.jpg" alt="">
-                    </div>
-
+                <div class="slide">
+                    <img src="Imagens/Musashi.jpg" alt="">
                 </div>
 
+                <div class="slide">
+                    <img src="Imagens/Villand.jpg" alt="">
+                </div>
             </div>
+        </div>
 
-            <button class="next">></button>
-
-        </section>
+        <button class="next">></button>
 
     </section>
 
+    <!-- FOOTER DA PÁGINA-->
     <footer class="rodape">
         <div class="rodape-main">
+
+            <!-- Direitos e autor da página-->
             <div class="rodape-rights">
                 <p>&copy; Kauã Santos - Desenvolvedor Fullstack</p>
                 <p>Todos os direitos reservados</p>
             </div>
 
+            <!--Links de direcionamento-->
             <div class="rodape-sections">
                 <a href="#Home">Home</a>
                 <a href="#Sobre">Sobre mim</a>
