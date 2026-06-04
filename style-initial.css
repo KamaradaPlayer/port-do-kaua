@@ -127,26 +127,41 @@ section {
     text-align: center;
 }
 
-.aboutme-main h1 {
+.hero-main {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+}
+
+.hero-subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-main h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 55px;
+    font-size: 65px;
 
     margin: 0;
 }
 
-.aboutme-main h2 {
+.hero-main h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: normal;
 
     margin: 0;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .hero-icons {
     display: flex;
     gap: 12px;
     margin-top: 10px;
+
+    margin: 0;
 }
 
 .hero-icons a {
@@ -182,30 +197,17 @@ section {
     box-shadow: 0 8px 20px rgba(27, 94, 32, 0.35);
 }
 
-.aboutme-info a i {
+.aboutme {
     display: flex;
-}
+    max-width: 1200px;
 
-.aboutme-main {
-    display: flex;
-    flex-direction: column;
-
-    width: fit fit-content;
-    
-    padding: 0;
     margin: 0 auto;
-}
-
-.aboutme-main div {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0;
-    margin: 0;
 }
 
 .aboutme-info {
     display: flex;
+    gap: 0 150px;
+    align-items: center;
 
     padding: 0;
     margin: 0;
@@ -213,27 +215,44 @@ section {
     margin-bottom: 230px;
 }
 
-.about-maindiv {
+.aboutme-text {
     display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+}
+
+.aboutme-text h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 55px;
+}
+
+.aboutme-text p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.aboutme-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
 
 }
 
-.about-maindiv div {
-    display: flex;
+.aboutme-images img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+    border: 6px solid #1B5E20;
+    border-radius: 40px;
 }
 
-.aboutme-info h2 {
+.aboutme-images p {
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-
-    padding: 0;
-    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
-
-.aboutme-info p {
-    font-family: "inter", sans-serif;
-}
-
 
 /* SECTION SLIDER */
 
@@ -244,7 +263,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
 
     margin-bottom: 50px;
 }
@@ -276,14 +295,22 @@ section {
 }
 
 .slider button {
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F1F8F4;
-    background-color: #1B5E20;
-    border: 15px solid #1B5E20;
-    border-radius: 50%;
+    font-size: 55px;
+    border: none;
+
+    color: #1B5E20;
+
+    width: 70px;
+    height: 70px;
+
+    transition: transform 0.2s ease, font-size 0.2s ease;
 }
+
+.slider button:hover {
+    transform: translateY(-4px);
+    font-size: 65px;
+}
+
 
 .prev,
 .next {
